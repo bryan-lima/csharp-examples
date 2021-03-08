@@ -10,7 +10,7 @@ namespace ProgramStructure.Classes {
 
         public object Unstack() {
             if(first == null) {
-                throw new InvalidOperationException();
+                throw new InvalidOperationException("The stack is empty!");
             }
 
             object result = first.item;
