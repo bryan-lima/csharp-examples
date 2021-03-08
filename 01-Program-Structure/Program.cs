@@ -1,4 +1,5 @@
 ﻿using System;
+using ProgramStructure.Classes;
 
 namespace ProgramStructure {
     class Program {

@@ -1,6 +1,6 @@
 using System;
 
-namespace ProgramStructure {
+namespace ProgramStructure.Classes {
     public class Stack {
         Position first;
 
