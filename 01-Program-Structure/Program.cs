@@ -1,12 +1,17 @@
 ﻿using System;
 
-namespace ProgramStructure
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
+namespace ProgramStructure {
+    class Program {
+        static void Main() {
+            var stack = new Stack();
+
+            stack.StackUp(1);
+            stack.StackUp(10);
+            stack.StackUp(100);
+
+            Console.WriteLine(stack.Unstack());
+            Console.WriteLine(stack.Unstack());
+            Console.WriteLine(stack.Unstack());
         }
     }
 }
