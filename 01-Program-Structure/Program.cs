@@ -13,7 +13,6 @@ namespace ProgramStructure {
             Console.WriteLine(stack.Unstack());
             Console.WriteLine(stack.Unstack());
             Console.WriteLine(stack.Unstack());
-            Console.WriteLine(stack.Unstack());
         }
     }
 }
