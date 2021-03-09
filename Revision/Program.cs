@@ -58,8 +58,30 @@ namespace Revision
                         }
 
                         var overallAverage = totalNote / numberOfStudents;
+                        Concept generalConcept;
 
-                        Console.WriteLine($"MÉDIA GERAL: {overallAverage}");
+                        if (overallAverage <= 2)
+                        {
+                            generalConcept = Concept.E;
+                        }
+                        else if (overallAverage <= 4)
+                        {
+                            generalConcept = Concept.D;
+                        }
+                        else if (overallAverage <= 6)
+                        {
+                            generalConcept = Concept.C;
+                        }
+                        else if (overallAverage <= 8)
+                        {
+                            generalConcept = Concept.B;
+                        }
+                        else
+                        {
+                            generalConcept = Concept.A;
+                        }
+
+                        Console.WriteLine($"MÉDIA GERAL: {overallAverage} - CONCEITO: {generalConcept}");
 
                         break;
                     default:
