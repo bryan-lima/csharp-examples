@@ -36,8 +36,14 @@ namespace Revision
 
                         break;
                     case "2":
-                        // TODO: List students
-                        Console.WriteLine($"Você digitou a opção {userOption}");
+                        foreach (var s in students)
+                        {
+                            if (!s.Name.Equals(""))
+                            {
+                                Console.WriteLine($"ALUNO: {s.Name} - NOTA: {s.Note}");
+                            }
+                        }
+
                         break;
                     case "3":
                         // TODO: Calculate overall average
