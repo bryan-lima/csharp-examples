@@ -19,7 +19,6 @@ namespace Revision
                         Console.WriteLine("Informe o nome do aluno:");
                         Student student = new Student();
                         student.Name = Console.ReadLine();
-                        Console.WriteLine();
 
                         Console.WriteLine("Informe a nota do aluno:");
                         if (decimal.TryParse(Console.ReadLine(), out decimal note))
@@ -38,7 +37,7 @@ namespace Revision
                     case "2":
                         foreach (var s in students)
                         {
-                            if (!s.Name.Equals(""))
+                            if (!string.IsNullOrEmpty(s.Name))
                             {
                                 Console.WriteLine($"ALUNO: {s.Name} - NOTA: {s.Note}");
                             }
