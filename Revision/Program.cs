@@ -45,8 +45,22 @@ namespace Revision
 
                         break;
                     case "3":
-                        // TODO: Calculate overall average
-                        Console.WriteLine($"Você digitou a opção {userOption}");
+                        decimal totalNote = 0;
+                        var numberOfStudents = 0;
+
+                        for (int i = 0; i < students.Length; i++)
+                        {
+                            if (!string.IsNullOrEmpty(students[i].Name))
+                            {
+                                totalNote += students[i].Note;
+                                numberOfStudents++;
+                            }
+                        }
+
+                        var overallAverage = totalNote / numberOfStudents;
+
+                        Console.WriteLine($"MÉDIA GERAL: {overallAverage}");
+
                         break;
                     default:
                         throw new ArgumentOutOfRangeException();
